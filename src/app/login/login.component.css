@@ -1,0 +1,19 @@
+input {
+    height: 32px;
+    margin: 0 0 2em 0;
+    width: 100%;
+    position: relative;
+    border-radius: 1px;
+    border-color: gainsboro;
+    padding: 0;
+}
+
+h1 {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+button {
+    position: relative;
+    width: 100%;
+}

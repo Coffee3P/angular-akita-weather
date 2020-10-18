@@ -125,6 +125,7 @@
   },
   "defaultProject": "angular-akita-weather",
   "cli": {
-    "analytics": "83ea10d8-6174-44fb-949e-050f2bdb469b"
+    "analytics": "83ea10d8-6174-44fb-949e-050f2bdb469b",
+    "defaultCollection": "@datorama/akita"
   }
 }

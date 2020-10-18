@@ -1,0 +1,8 @@
+<h1>Login</h1>
+
+
+<form [formGroup]="loginForm" (ngSubmit)="submit()">
+   <input type="email" formControlName="email">
+   <input type="password" formControlName="password">
+   <button type="submit">Submit</button>
+</form>
