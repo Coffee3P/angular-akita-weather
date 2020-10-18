@@ -4,12 +4,14 @@ import { Injectable } from '@angular/core';
 export type SessionState = {
     token: string;
     name: string;
+    city: string;
 }
 
 export function createInitialSessionState(): SessionState {
     return {
         token: null,
-        name: null
+        name: null,
+        city: null,
     };
 }
 

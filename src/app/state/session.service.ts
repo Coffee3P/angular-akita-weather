@@ -33,4 +33,8 @@ export class SessionService {
     isLoggedIn(): boolean {
         return this.authQuery.isLoggedIn();
     }
+
+    currentToken(): string {
+        return this.authQuery.getValue().token;
+    }
 }

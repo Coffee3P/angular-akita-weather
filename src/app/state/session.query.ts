@@ -8,6 +8,7 @@ import { Injectable } from '@angular/core';
 export class SessionQuery extends Query<SessionState> {
     isLoggedIn$ = this.select(state => toBoolean(state.token));
     name$ = this.select(state => state.name);
+    userCity$ = this.select(state => state.city);
 
     constructor(protected store: SessionStore) {
         super(store);
