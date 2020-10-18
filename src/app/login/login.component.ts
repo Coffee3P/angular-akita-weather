@@ -11,7 +11,7 @@ import { SessionService } from '../state/session.service';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   
-  constructor() { }
+  constructor(/*private authService: SessionService, private router: Router*/) { }
 
   ngOnInit() {
     this.loginForm = new FormGroup({
