@@ -7,6 +7,15 @@ import { Injectable } from '@angular/core';
 })
 export class SessionDataService {
     login(creds) {
-        return timer(300).pipe(mapTo({ token: '<Token here>', name: '' }));
+        console.log(`SessionDataService: Login with email: ${creds.email} and password: ${creds.password}.`);
+
+        let returnValue = { token: '', name: 'Unauthorized person' };
+
+        if (creds.email === 'Emil') {
+            returnValue.token = '';
+            returnValue.name = 'Emil';
+        }
+
+        return timer(300).pipe(mapTo(returnValue));
     }
 }

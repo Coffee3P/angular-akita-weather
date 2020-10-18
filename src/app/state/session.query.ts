@@ -11,5 +11,18 @@ export class SessionQuery extends Query<SessionState> {
 
     constructor(protected store: SessionStore) {
         super(store);
+        console.log(`SessionQuery init`);
+    }
+
+    isLoggedIn(): boolean {
+        let storedToken = this.getValue().token
+
+        console.log(`SessionQuery: The currently stored token is: ${storedToken}.`);
+
+        if (storedToken) {
+            return false;
+        }
+
+        return true;
     }
 }

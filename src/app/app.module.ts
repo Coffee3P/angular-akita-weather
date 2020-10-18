@@ -7,11 +7,13 @@ import { NG_ENTITY_SERVICE_CONFIG } from '@datorama/akita-ng-entity-service';
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import { environment } from '../environments/environment';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,

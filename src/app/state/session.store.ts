@@ -23,12 +23,12 @@ export class SessionStore extends Store<SessionState> {
     }
 
     login(session: SessionState): void {
-        console.log(`Did login with name: ${session.name} and token: ${session.token}`);
+        console.log(`SessionStore: Did login with name: ${session.name} and token: ${session.token}`);
         this.update(session);
     }
 
     logout(): void {
-        console.log('Did log out.');
+        console.log('SessionStore: Did log out.');
         this.update(createInitialSessionState());
     }
 }
