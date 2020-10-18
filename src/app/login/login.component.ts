@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
 import { SessionService } from '../state/session.service';
 
@@ -11,7 +10,7 @@ import { SessionService } from '../state/session.service';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   
-  constructor(/*private authService: SessionService, private router: Router*/) { }
+  constructor(private authService: SessionService) { }
 
   ngOnInit() {
     this.loginForm = new FormGroup({
@@ -21,10 +20,10 @@ export class LoginComponent implements OnInit {
   }
 
   submit(): void {
-    /*if (this.loginForm.valid) {
+    if (this.loginForm.valid) {
       this.authService.login(this.loginForm.value).subscribe(() => {
-        this.router.navigateByUrl('');
+        console.log('Subscribed to session.')
       })
-    }*/
+    }
   }
 }

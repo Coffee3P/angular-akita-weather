@@ -13,6 +13,9 @@ export function createInitialSessionState(): SessionState {
     };
 }
 
+@Injectable({
+    providedIn: 'root'
+})
 @StoreConfig({ name: 'session' })
 export class SessionStore extends Store<SessionState> {
     constructor() {
