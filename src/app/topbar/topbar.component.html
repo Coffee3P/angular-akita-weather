@@ -1,0 +1,8 @@
+<div *ngIf="userIsLoggedIn$ | async">
+    <p>Hello {{ currentUsersName$ | async }}</p>
+
+    <button (click)="logout()">Log out</button>
+</div>
+<div *ngIf="(userIsLoggedIn$ | async) == false">
+    <p>You have to sign in first.</p>
+</div>

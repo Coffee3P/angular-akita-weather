@@ -9,12 +9,14 @@ import { environment } from '../environments/environment';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WeatherComponent } from './weather/weather.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TopbarComponent } from './topbar/topbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     WeatherComponent,
+    TopbarComponent,
   ],
   imports: [
     BrowserModule,

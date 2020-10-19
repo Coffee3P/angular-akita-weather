@@ -1,0 +1,7 @@
+<div *ngIf="weather$ | async as weather">
+    <h4>Current weather in: {{ weather.name }}</h4>
+
+    <p>Temp (C): {{weather.main.temp - 273.15 }}</p>
+</div>
+
+<div *ngIf="(weather$ | async) == null"></div>
