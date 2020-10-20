@@ -10,6 +10,8 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
 import { WeatherComponent } from './weather/weather.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TopbarComponent } from './topbar/topbar.component';
+import { TemperaturePipe } from './temperature.pipe';
+import { CelciusPipe } from './celcius.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { TopbarComponent } from './topbar/topbar.component';
     LoginComponent,
     WeatherComponent,
     TopbarComponent,
+    TemperaturePipe,
+    CelciusPipe,
   ],
   imports: [
     BrowserModule,
